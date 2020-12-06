@@ -22,6 +22,9 @@ class NewPost extends Component {
             .then(response => {
                 console.log(response);
                 this.setState({submitted:true});
+                // this.props.history.replace() this is similar to redirect as you cannot go back to the previous page
+                // this.props.history.push('/');
+
             });
     }
 
