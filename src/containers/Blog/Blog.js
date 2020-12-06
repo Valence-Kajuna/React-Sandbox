@@ -17,9 +17,7 @@ class Blog extends Component {
                         <ul>
                             <li><NavLink activeClassName="my-active" to="/" exact>Posts</NavLink></li>
                             <li><NavLink activeClassName="my-active" to={{
-                                pathname: '/new-post',
-                                hash: '#submit',
-                                search: '?quich-submit=true'
+                                pathname: '/new-post'
                             }}>NewPost</NavLink></li>
                             
                         </ul>
@@ -30,9 +28,10 @@ class Blog extends Component {
                 {/* <Posts />   */}
 
                 <Switch>
-                <Route path="/"  component={Posts} />
                 <Route path="/new-post" component={NewPost} />
+                <Route path="/"  component={Posts} />
                 </Switch>
+           
                 
             </div>
         );
